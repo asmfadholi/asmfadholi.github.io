@@ -99,6 +99,14 @@ body {
 #contact svg:hover .fill {
   fill: #678b99;  
 }
+#footer {
+  color: white;
+  text-align: center;
+  width: auto;
+  background-color: black;
+  float: center;
+  padding-bottom: 5px;
+}
 
 
 /* responsive size */
