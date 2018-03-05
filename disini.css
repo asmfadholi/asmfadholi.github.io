@@ -101,11 +101,14 @@ body {
 }
 footer {
   color: white;
+  height: 50px;
   text-align: center;
   width: auto;
-  background-color: black;
-  float: center;
-  padding-bottom: 5px;
+  background-color: black;  
+  padding: 10px;  
+}
+footer a:hover{
+  text-decoration: none;
 }
 
 
