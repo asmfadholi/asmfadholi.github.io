@@ -65,6 +65,7 @@ body {
 #about-me img {
   border-radius: 70%;
   border: solid 2px #acc1d4;
+  width:100px;
 }
 
 /*portofolio*/
