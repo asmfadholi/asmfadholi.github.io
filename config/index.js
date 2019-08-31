@@ -49,11 +49,11 @@ module.exports = {
 
   build: {
     // Template for index.html
-    index: path.resolve(__dirname, `${process.env.PATH_BUILD}dist/index.html`),
+    index: path.resolve(__dirname, `${process.env.PATH_BUILD}index.html`),
 
     // Paths
-    assetsRoot: path.resolve(__dirname, `${process.env.PATH_BUILD}dist`),
-    assetsSubDirectory: 'static',
+    assetsRoot: path.resolve(__dirname, `${process.env.PATH_BUILD}`),
+    assetsSubDirectory: 'result',
     assetsPublicPath: process.env.BUILD_ASSETS_URL,
 
     /**
