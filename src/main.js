@@ -26,7 +26,7 @@ import './sass/main.scss';
 // eslint-disable-next-line
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
-import 'line-awesome/dist/css/line-awesome-font-awesome.min.css';
+import 'line-awesome/dist/font-awesome-line-awesome/css/all.min.css';
 import 'vue-multiselect/dist/vue-multiselect.min.css';
 
 Vue.config.productionTip = false;

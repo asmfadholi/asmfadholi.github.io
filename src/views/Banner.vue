@@ -4,7 +4,7 @@
     <div class="background">
       <div class="photo">
         <img
-          src="https://media.licdn.com/dms/image/C5103AQFnEFtyc6l1NA/profile-displayphoto-shrink_200_200/0?e=1572480000&amp;v=beta&amp;t=G-_HW_8OcleEX_OQ1S-TWqg_BSlPWYy4-3OFB_C2MTo"
+          :src="require('@/assets/images/photo.jpeg')"
           alt="Edit photo"
           height="128"
           width="128">

@@ -88,7 +88,8 @@ export default {
           company_name: 'Jojonomic - The Future of Work',
           start_date: '2018-07-01',
           end_date: null,
-          logo: 'https://media.licdn.com/dms/image/C4D0BAQFu7TX3cwfLkg/company-logo_400_400/0?e=1574899200&v=beta&t=RZX3gIrIV_pwgqj-3j2VDHQEoGSSG2VeUsVZwnAM0fk',
+          // eslint-disable-next-line
+          logo: require('@/assets/images/jojonomic.png'),
           experiences: [
             {
               title: 'Squad Lead Engineer - Frontend Engineer',
@@ -143,7 +144,8 @@ export default {
           company_name: 'Urbanhire',
           start_date: '2018-03-02',
           end_date: '2018-06-30',
-          logo: 'https://media.licdn.com/dms/image/C560BAQGv4rPMVYA4CA/company-logo_400_400/0?e=1574899200&v=beta&t=vRXx4l2gLIPuLqC6vpBv50UV4b-ywnBV74eKFxTgnKA',
+          // eslint-disable-next-line
+          logo: require('@/assets/images/urbanhire.jpeg'),
           experiences: [
             {
               title: 'Software Engineer Intern',
