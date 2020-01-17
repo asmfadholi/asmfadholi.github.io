@@ -85,9 +85,33 @@ export default {
     return {
       jobs: [
         {
+          company_name: 'Gtalent-asia',
+          start_date: '2019-11-18',
+          end_date: null,
+          // eslint-disable-next-line
+          logo: require('@/assets/images/gtalent-logo.png'),
+          experiences: [
+            {
+              title: 'Full Stack Engineer',
+              jobdesc: [
+                '1 - Implement unit testing using mocha and jest in front-end',
+                '2 - Implement grapql both client and server',
+                '3 - Develop backend stack using nodejs and firebase function',
+                '4 - Develop frontend stack using vuejs',
+                '5 - Develop Assessment DISC product',
+                '6 - Develop Human Capital Management product',
+                '7 - Create skeleton of code for frontend',
+              ],
+              start_date: '2019-11-18',
+              end_date: null,
+              is_show: false,
+            },
+          ],
+        },
+        {
           company_name: 'Jojonomic - The Future of Work',
           start_date: '2018-07-01',
-          end_date: null,
+          end_date: '2019-11-15',
           // eslint-disable-next-line
           logo: require('@/assets/images/jojonomic.png'),
           experiences: [
@@ -109,7 +133,7 @@ export default {
                 '13 - Responsible to review my team code',
               ],
               start_date: '2019-03-01',
-              end_date: null,
+              end_date: '2019-11-15',
               is_show: false,
             },
             {

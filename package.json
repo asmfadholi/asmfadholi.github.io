@@ -25,7 +25,7 @@
     "cors": "^2.8.5",
     "dotenv": "^6.1.0",
     "express": "^4.16.3",
-    "line-awesome": "github:icons8/line-awesome",
+    "line-awesome": "1.0.2",
     "mongoose": "^5.6.0",
     "serve-static": "^1.13.2",
     "vue": "2.5.2",

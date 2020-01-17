@@ -50,7 +50,7 @@ export default {
           major: 'Bachelor of Engineering - BE, Biological Engineering',
           start_date: '2013-08-23',
           end_date: '2017-10-20',
-          logo: 'https://media.licdn.com/dms/image/C4E0BAQE7JmnVsXZ_-w/company-logo_400_400/0?e=1575504000&v=beta&t=ibIsNTNtCfsDfmJaj4G85EYX7GTZwt1XxeMmMGNIb44',
+          logo: require('@/assets/images/itb-logo.png'),
           description: [],
         },
       ],

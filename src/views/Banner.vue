@@ -19,7 +19,7 @@
             md="7">
             <div>
               <h3>Mochammad Fadholi</h3>
-              <h4 class="t--17">Frontend Engineer</h4>
+              <h4 class="t--17">Full stack javascript</h4>
               <ul>
                 <li class="d-inline">South Jakarta</li>
                 <li class="d-inline dot">Indonesia</li>
@@ -39,19 +39,19 @@
               <b-row class="work">
                 <b-col cols="2">
                   <img
-                    src="https://media.licdn.com/dms/image/C4D0BAQFu7TX3cwfLkg/company-logo_400_400/0?e=1574899200&amp;v=beta&amp;t=RZX3gIrIV_pwgqj-3j2VDHQEoGSSG2VeUsVZwnAM0fk"
+                    :src="require('@/assets/images/gtalent-logo.png')"
                     class="EntityPhoto-square-1 flex-shrink-zero"
                     alt="">
                 </b-col>
                 <b-col>
-                  <span> Jojonomic - The Future of Work </span>
+                  <span> Gtalent-asia </span>
                 </b-col>
               </b-row>
 
               <b-row class="school">
                 <b-col cols="2">
                   <img
-                    src="https://media.licdn.com/dms/image/C4E0BAQE7JmnVsXZ_-w/company-logo_400_400/0?e=1574899200&amp;v=beta&amp;t=Iq-2ZFKFidYdeHJlxP66Xqpi60Es49vK1_XraLthFQM"
+                    :src="require('@/assets/images/itb-logo.png')"
                     class="EntityPhoto-square-1 flex-shrink-zero"
                     alt="">
                 </b-col>

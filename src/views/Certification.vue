@@ -36,8 +36,8 @@
               </p>
               <b>
                 <a
-                  class="c--grey "
                   :href="cert.credential_url"
+                  class="c--grey "
                   target="_blank">See credential
                 </a>
               </b>
@@ -60,11 +60,20 @@ export default {
     return {
       certification: [
         {
+          name: 'Create Telegram bot with NodeJS and Firebase Cloud Functions',
+          organization: 'Udemy',
+          credential: 'UC-POEDEG32',
+          credential_url: 'https://www.udemy.com/certificate/UC-POEDEG32/',
+          logo: require('@/assets/images/udemy.jpeg'),
+          start_date: '2020-01-14',
+          end_date: null,
+        },
+        {
           name: 'Introduction to HTML 5',
           organization: 'Coursera',
           credential: 'RSE9UWB2VP8W',
           credential_url: 'https://www.coursera.org/account/accomplishments/verify/RSE9UWB2VP8W',
-          logo: 'https://media.licdn.com/dms/image/C4E0BAQGt72dvhq4yRA/company-logo_400_400/0?e=1575504000&v=beta&t=KVKvOcwScoM9_3qEeD8tYhLtL1pOY9gHes3-4m6p2oI',
+          logo: require('@/assets/images/coursera.jpeg'),
           start_date: '2019-08-23',
           end_date: null,
         },
@@ -73,7 +82,7 @@ export default {
           organization: 'FreeCodeCamp',
           credential: null,
           credential_url: 'https://www.freecodecamp.org/certification/asmfadholi/javascript-algorithms-and-data-structures',
-          logo: 'https://media.licdn.com/dms/image/C510BAQEd4yTPDOI9-A/company-logo_400_400/0?e=1575504000&v=beta&t=som1C9-0AmkJMQD6khT29KfCekC5IvCR_TnKuVAqZFk',
+          logo: require('@/assets/images/free-code-camp.jpeg'),
           start_date: '2019-08-23',
           end_date: null,
         },
@@ -82,8 +91,26 @@ export default {
           organization: 'FreeCodeCamp',
           credential: null,
           credential_url: 'https://www.freecodecamp.org/certification/asmfadholi/javascript-algorithms-and-data-structures',
-          logo: 'https://media.licdn.com/dms/image/C510BAQEd4yTPDOI9-A/company-logo_400_400/0?e=1575504000&v=beta&t=som1C9-0AmkJMQD6khT29KfCekC5IvCR_TnKuVAqZFk',
+          logo: require('@/assets/images/free-code-camp.jpeg'),
           start_date: '2018-11-01',
+          end_date: null,
+        },
+        {
+          name: 'MongoDB Essentials - Understand the Basics of MongoDB',
+          organization: 'Udemy',
+          credential: 'UC-56VCD11Q',
+          credential_url: 'https://www.udemy.com/certificate/UC-56VCD11Q/',
+          logo: require('@/assets/images/udemy.jpeg'),
+          start_date: '2018-04-23',
+          end_date: null,
+        },
+        {
+          name: 'Learn to Program in Javascript: Beginner to Pro',
+          organization: 'Udemy',
+          credential: 'UC-ESL1QOPE',
+          credential_url: 'https://www.udemy.com/certificate/UC-ESL1QOPE/',
+          logo: require('@/assets/images/udemy.jpeg'),
+          start_date: '2018-04-23',
           end_date: null,
         },
       ],
