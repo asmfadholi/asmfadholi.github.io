@@ -90,7 +90,7 @@ export default {
           name: 'Responsive Web Design',
           organization: 'FreeCodeCamp',
           credential: null,
-          credential_url: 'https://www.freecodecamp.org/certification/asmfadholi/javascript-algorithms-and-data-structures',
+          credential_url: 'https://www.freecodecamp.org/certification/asmfadholi/responsive-web-design',
           logo: require('@/assets/images/free-code-camp.jpeg'),
           start_date: '2018-11-01',
           end_date: null,
