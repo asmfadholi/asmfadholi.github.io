@@ -39,12 +39,12 @@
               <b-row class="work">
                 <b-col cols="2">
                   <img
-                    :src="require('@/assets/images/gtalent-logo.png')"
+                    :src="require('@/assets/images/jojonomic.png')"
                     class="EntityPhoto-square-1 flex-shrink-zero"
                     alt="">
                 </b-col>
                 <b-col>
-                  <span> Gtalent-asia </span>
+                  <span> Jojonomic - The Future of Work </span>
                 </b-col>
               </b-row>
 
