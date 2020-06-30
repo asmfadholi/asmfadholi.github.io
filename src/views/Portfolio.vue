@@ -85,7 +85,7 @@ export default {
           ],
         },
         {
-          title: 'Landing Page Urbanhire',
+          title: 'Urbanhire Project',
           url: 'https://www.urbanhire.co/employers/',
           image: 'https://ecc.co.id/public/portofolio/439016/1527324287Screenshot_from_2018-05-26_15-43-25.png',
           description: [
@@ -114,6 +114,14 @@ export default {
           image: 'https://raw.githubusercontent.com/asmfadholi/assets/master/Screenshot%20from%202019-08-31%2021-44-06.png',
           description: [
             'Developing jojosales, jojoflow, costcenter, global component and documentation using Vuejs, webpack, scss, babel, and nodejs',
+          ],
+        },
+        {
+          title: 'Biznis.id Project',
+          url: 'https://biznis.id/',
+          image: require('@/assets/images/biznis-product.png'),
+          description: [
+            'Using nuxtjs, scss, nodejs, redis, express-session, flowplayer, midtrans',
           ],
         },
       ],

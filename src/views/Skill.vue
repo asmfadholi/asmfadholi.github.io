@@ -55,6 +55,7 @@ export default {
         'Research',
         'Javascript',
         'Vuejs',
+        'Nuxtjs',
         'Reactjs',
         'Webpack',
         'Firebase',

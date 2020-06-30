@@ -84,34 +84,56 @@ export default {
   data() {
     return {
       jobs: [
-        // {
-        //   company_name: 'Gtalent-asia',
-        //   start_date: '2019-11-18',
-        //   end_date: null,
-        //   // eslint-disable-next-line
-        //   logo: require('@/assets/images/gtalent-logo.png'),
-        //   experiences: [
-        //     {
-        //       title: 'Full Stack Engineer',
-        //       jobdesc: [
-        //         '1 - Implement unit testing using mocha and jest in front-end',
-        //         '2 - Implement grapql both client and server',
-        //         '3 - Develop backend stack using nodejs and firebase function',
-        //         '4 - Develop frontend stack using vuejs',
-        //         '5 - Develop Assessment DISC product',
-        //         '6 - Develop Human Capital Management product',
-        //         '7 - Create skeleton of code for frontend',
-        //       ],
-        //       start_date: '2019-11-18',
-        //       end_date: null,
-        //       is_show: false,
-        //     },
-        //   ],
-        // },
+        {
+          company_name: 'Biznis.id',
+          start_date: '2020-03-24',
+          end_date: null,
+          // eslint-disable-next-line
+          logo: require('@/assets/images/biznis-logo.png'),
+          experiences: [
+            {
+              title: 'Frontend Engineer',
+              jobdesc: [
+                '1 - Build Learning App from scratch using nuxtjs',
+                '2 - Integrate Payment with Midtrans',
+                '3 - Integrate Video player with FlowPlayer',
+                '4 - Implement standarization commit message in git',
+                '5 - Implement redis-express for session storage',
+                '6 - Implement sentry for tracking bug in App',
+              ],
+              start_date: '2020-03-24',
+              end_date: null,
+              is_show: false,
+            },
+          ],
+        },
+        {
+          company_name: 'Gtalent-asia',
+          start_date: '2019-12-18',
+          end_date: '2020-02-01',
+          // eslint-disable-next-line
+          logo: require('@/assets/images/gtalent-logo.png'),
+          experiences: [
+            {
+              title: 'Frontend Engineer',
+              jobdesc: [
+                '1 - Implement unit testing using mocha and jest in front-end',
+                '2 - Develop server side using nodejs and firebase function',
+                '3 - Develop frontend stack using vuejs',
+                '4 - Develop Assessment DISC product',
+                '5 - Develop Human Capital Management product',
+                '6 - Create skeleton of code for frontend',
+              ],
+              start_date: '2019-12-18',
+              end_date: '2020-02-01',
+              is_show: false,
+            },
+          ],
+        },
         {
           company_name: 'Jojonomic - The Future of Work',
           start_date: '2018-07-01',
-          end_date: null,
+          end_date: '2019-12-01',
           // eslint-disable-next-line
           logo: require('@/assets/images/jojonomic.png'),
           experiences: [
@@ -133,7 +155,7 @@ export default {
                 '13 - Responsible to review my team code',
               ],
               start_date: '2019-03-01',
-              end_date: null,
+              end_date: '2019-12-01',
               is_show: false,
             },
             {

@@ -39,12 +39,12 @@
               <b-row class="work">
                 <b-col cols="2">
                   <img
-                    :src="require('@/assets/images/jojonomic.png')"
+                    :src="require('@/assets/images/biznis-logo.png')"
                     class="EntityPhoto-square-1 flex-shrink-zero"
                     alt="">
                 </b-col>
                 <b-col>
-                  <span> Jojonomic - The Future of Work </span>
+                  <span> Biznis.id </span>
                 </b-col>
               </b-row>
 
