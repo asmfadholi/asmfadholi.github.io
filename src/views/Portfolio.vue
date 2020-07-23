@@ -11,7 +11,8 @@
           :key="iport">
           <a
             :href="port.url"
-            target="_blank">
+            target="_blank"
+            rel="noreferrer">
             <h3 class="t--16"> <b> {{ port.title }} </b> </h3>
           </a>
           <div class="float-to-center">
