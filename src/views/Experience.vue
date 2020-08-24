@@ -59,9 +59,9 @@
                       {{ detail }}
                       <a @click="jobdesc.is_show = !jobdesc.is_show">
                         <!-- eslint-disable-next-line -->
-                        {{ jobdesc.is_show && (Number(i) === (jobdesc.jobdesc.length - 1)) ? '.See Less' : '' }}
+                                            {{ jobdesc.is_show && (Number(i) === (jobdesc.jobdesc.length - 1)) ? '.See Less' : '' }}
                         <!-- eslint-disable-next-line -->
-                        {{ !jobdesc.is_show && (Number(i) === (splitJob(jobdesc.jobdesc).length - 1)) ? '...Show More' : '' }}
+                                            {{ !jobdesc.is_show && (Number(i) === (splitJob(jobdesc.jobdesc).length - 1)) ? '...Show More' : '' }}
                       </a>
                     </span>
                     <br>
@@ -78,137 +78,130 @@
 </template>
 
 <script>
-
 export default {
   name: 'Banner',
   data() {
     return {
-      jobs: [
-        {
-          company_name: 'Biznis.id',
-          start_date: '2020-03-24',
+      jobs: [{
+        company_name: 'Biznis.id',
+        start_date: '2020-01-24',
+        end_date: null,
+        // eslint-disable-next-line
+                    logo: require('@/assets/images/biznis-logo.png'),
+        experiences: [{
+          title: 'Senior Frontend Engineer',
+          jobdesc: [
+            '1 - Build Learning App from scratch using nuxtjs',
+            '2 - Integrate Payment with Midtrans',
+            '3 - Integrate Video player with FlowPlayer',
+            '4 - Implement standarization commit message in git',
+            '5 - Implement redis-express for session storage',
+            '6 - Implement sentry for tracking bug in App',
+          ],
+          start_date: '2020-01-24',
           end_date: null,
-          // eslint-disable-next-line
-          logo: require('@/assets/images/biznis-logo.png'),
-          experiences: [
-            {
-              title: 'Frontend Engineer',
-              jobdesc: [
-                '1 - Build Learning App from scratch using nuxtjs',
-                '2 - Integrate Payment with Midtrans',
-                '3 - Integrate Video player with FlowPlayer',
-                '4 - Implement standarization commit message in git',
-                '5 - Implement redis-express for session storage',
-                '6 - Implement sentry for tracking bug in App',
-              ],
-              start_date: '2020-03-24',
-              end_date: null,
-              is_show: false,
-            },
+          is_show: false,
+        }],
+      },
+        // {
+        //   company_name: 'Gtalent-asia',
+        //   start_date: '2019-12-18',
+        //   end_date: '2020-02-01',
+        //   // eslint-disable-next-line
+        //   logo: require('@/assets/images/gtalent-logo.png'),
+        //   experiences: [
+        //     {
+        //       title: 'Frontend Engineer',
+        //       jobdesc: [
+        //         '1 - Implement unit testing using mocha and jest in front-end',
+        //         '2 - Develop server side using nodejs and firebase function',
+        //         '3 - Develop frontend stack using vuejs',
+        //         '4 - Develop Assessment DISC product',
+        //         '5 - Develop Human Capital Management product',
+        //         '6 - Create skeleton of code for frontend',
+        //       ],
+        //       start_date: '2019-12-18',
+        //       end_date: '2020-02-01',
+        //       is_show: false,
+        //     },
+        //   ],
+        // },
+      {
+        company_name: 'Jojonomic - The Future of Work',
+        start_date: '2018-07-01',
+        end_date: '2019-12-01',
+        // eslint-disable-next-line
+                    logo: require('@/assets/images/jojonomic.png'),
+        experiences: [{
+          title: 'Squad Lead Engineer - Frontend Engineer',
+          jobdesc: [
+            '1 - Manage team, consist of 3 members.',
+            '2 - Create documentation of weekly task.',
+            '3 - Define weekly task for my teams and assign task on Jira board.',
+            '4 - Meeting with business analyst about change request, mandays, and new feature of apps and translate them from business process to technical',
+            '5 - Improve skeleton of code to make code easier to understand, so developer will deliver task on time.',
+            '6 - Doing daily standup meeting with my team, talking about task, knowledge, and new technology.',
+            '7 - Weekly meeting with other lead engineer to discuss about task point, time and improvement of code.',
+            '8 - Work with infrastructure developer how to deploy vuejs project, design deployment process using jenkins, so we can cut off the time of deployment process.',
+            '9 - bug fixing on production.',
+            '10 - Build new feature, that is jojosales.',
+            '11 - Doing retro to evaluate task and performance on last week.',
+            '12 - Deliver technical knowledge to all frontend developer.',
+            '13 - Responsible to review my team code',
           ],
-        },
-        {
-          company_name: 'Gtalent-asia',
-          start_date: '2019-12-18',
-          end_date: '2020-02-01',
-          // eslint-disable-next-line
-          logo: require('@/assets/images/gtalent-logo.png'),
-          experiences: [
-            {
-              title: 'Frontend Engineer',
-              jobdesc: [
-                '1 - Implement unit testing using mocha and jest in front-end',
-                '2 - Develop server side using nodejs and firebase function',
-                '3 - Develop frontend stack using vuejs',
-                '4 - Develop Assessment DISC product',
-                '5 - Develop Human Capital Management product',
-                '6 - Create skeleton of code for frontend',
-              ],
-              start_date: '2019-12-18',
-              end_date: '2020-02-01',
-              is_show: false,
-            },
-          ],
-        },
-        {
-          company_name: 'Jojonomic - The Future of Work',
-          start_date: '2018-07-01',
+          start_date: '2019-03-01',
           end_date: '2019-12-01',
-          // eslint-disable-next-line
-          logo: require('@/assets/images/jojonomic.png'),
-          experiences: [
-            {
-              title: 'Squad Lead Engineer - Frontend Engineer',
-              jobdesc: [
-                '1 - Manage team, consist of 3 members.',
-                '2 - Create documentation of weekly task.',
-                '3 - Define weekly task for my teams and assign task on Jira board.',
-                '4 - Meeting with business analyst about change request, mandays, and new feature of apps and translate them from business process to technical',
-                '5 - Improve skeleton of code to make code easier to understand, so developer will deliver task on time.',
-                '6 - Doing daily standup meeting with my team, talking about task, knowledge, and new technology.',
-                '7 - Weekly meeting with other lead engineer to discuss about task point, time and improvement of code.',
-                '8 - Work with infrastructure developer how to deploy vuejs project, design deployment process using jenkins, so we can cut off the time of deployment process.',
-                '9 - bug fixing on production.',
-                '10 - Build new feature, that is jojosales.',
-                '11 - Doing retro to evaluate task and performance on last week.',
-                '12 - Deliver technical knowledge to all frontend developer.',
-                '13 - Responsible to review my team code',
-              ],
-              start_date: '2019-03-01',
-              end_date: '2019-12-01',
-              is_show: false,
-            },
-            {
-              title: 'Software Engineer',
-              jobdesc: [
-                '1 - Migrate programming code from jquery (javascript library) to vue js (javascript framework)',
-                '2 - Implement vue js, includes vuex (for state management) and router (for dynamic page route)',
-                '3 - Setup webpack configuration for running framework (module compiler).',
-                '4 - Implement eslint (using airbnb standard) in vue js project for standarization of code.',
-                '5 - Build Base-Dasboard for global component, and deploy them on npm.',
-                '6 - Design Frontend code to modular, separate in several repository (ex: Pro-dashboard, Costcenter-dashboard, etc)',
-                '7 - Handle project on premise, and design how to patch vue js on them.',
-                '8 - Embed vuejs module to jquery project.',
-                '9 - Build documentation, how to use global component.',
-                '10 - Configure global dependencies in base-dashboard',
-                '11 - Create skeleton of code.',
-                '12 - Implement sass (css preprocessor) and centralize any styling code on them.',
-                '13 - Work with infrastructure developer, how to deploy vuejs project on web service.',
-                '14 - Configure CI/CD on bitbucket to heroku, so we can deploy vuejs project automatically.',
-                '15 - bug fixing any bug and build new feature like costcenter, jojoflow, and project.',
-                '16 - Responsible to deploy vuejs project on QA server.',
-                '17 - Responsible to review the code another developer, especially in vuejs project.',
-                '18 - Implement micro-frontend structure',
-              ],
-              start_date: '2018-07-02',
-              end_date: '2019-02-28',
-              is_show: false,
-            },
-          ],
+          is_show: false,
         },
         {
-          company_name: 'Urbanhire',
+          title: 'Software Engineer',
+          jobdesc: [
+            '1 - Migrate programming code from jquery (javascript library) to vue js (javascript framework)',
+            '2 - Implement vue js, includes vuex (for state management) and router (for dynamic page route)',
+            '3 - Setup webpack configuration for running framework (module compiler).',
+            '4 - Implement eslint (using airbnb standard) in vue js project for standarization of code.',
+            '5 - Build Base-Dasboard for global component, and deploy them on npm.',
+            '6 - Design Frontend code to modular, separate in several repository (ex: Pro-dashboard, Costcenter-dashboard, etc)',
+            '7 - Handle project on premise, and design how to patch vue js on them.',
+            '8 - Embed vuejs module to jquery project.',
+            '9 - Build documentation, how to use global component.',
+            '10 - Configure global dependencies in base-dashboard',
+            '11 - Create skeleton of code.',
+            '12 - Implement sass (css preprocessor) and centralize any styling code on them.',
+            '13 - Work with infrastructure developer, how to deploy vuejs project on web service.',
+            '14 - Configure CI/CD on bitbucket to heroku, so we can deploy vuejs project automatically.',
+            '15 - bug fixing any bug and build new feature like costcenter, jojoflow, and project.',
+            '16 - Responsible to deploy vuejs project on QA server.',
+            '17 - Responsible to review the code another developer, especially in vuejs project.',
+            '18 - Implement micro-frontend structure',
+          ],
+          start_date: '2018-07-02',
+          end_date: '2019-02-28',
+          is_show: false,
+        },
+        ],
+      },
+      {
+        company_name: 'Urbanhire',
+        start_date: '2018-03-02',
+        end_date: '2018-06-30',
+        // eslint-disable-next-line
+                    logo: require('@/assets/images/urbanhire.jpeg'),
+        experiences: [{
+          title: 'Software Engineer Intern',
+          jobdesc: [
+            '1 - Build landing page using jquery (js library), sass and less (css preprocessor), pug (html preprocessor)',
+            '2 - Bug fixing some existing features.',
+            '3 - Collaborate with team using git.',
+            '4 - Understanding a little about webpack, gulp and grunt.',
+            '5 - Implement javascript framework (vue js and little about react js) in several features.',
+            '6 - Work together with teams (backend, frontend, UI/UX specialist and SEO specialist)',
+          ],
           start_date: '2018-03-02',
           end_date: '2018-06-30',
-          // eslint-disable-next-line
-          logo: require('@/assets/images/urbanhire.jpeg'),
-          experiences: [
-            {
-              title: 'Software Engineer Intern',
-              jobdesc: [
-                '1 - Build landing page using jquery (js library), sass and less (css preprocessor), pug (html preprocessor)',
-                '2 - Bug fixing some existing features.',
-                '3 - Collaborate with team using git.',
-                '4 - Understanding a little about webpack, gulp and grunt.',
-                '5 - Implement javascript framework (vue js and little about react js) in several features.',
-                '6 - Work together with teams (backend, frontend, UI/UX specialist and SEO specialist)',
-              ],
-              start_date: '2018-03-02',
-              end_date: '2018-06-30',
-              is_show: false,
-            },
-          ],
-        },
+          is_show: false,
+        }],
+      },
       ],
     };
   },
@@ -240,97 +233,101 @@ export default {
     },
   },
 };
-
 </script>
 
 <style lang="scss">
-  .c--grey {
-    color: rgba(0,0,0,.6);
-  }
-  .t--14 {
+.c--grey {
+    color: rgba(0, 0, 0, .6);
+}
+
+.t--14 {
     font-size: 14px;
-  }
-  .t--16 {
+}
+
+.t--16 {
     font-size: 16px;
-  }
-  .t--17 {
+}
+
+.t--17 {
     font-size: 17px;
-  }
-  .Experience {
+}
+
+.Experience {
     position: relative;
-    box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px rgba(0,0,0,.2);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .15), 0 2px 3px rgba(0, 0, 0, .2);
 
     .jobs {
-      img {
-        height: 55px;
-        width: 55px;
-      }
+        img {
+            height: 55px;
+            width: 55px;
+        }
     }
 
     .card-body {
-      padding: 0px;
+        padding: 0px;
     }
 
     .dot-year::before {
-      content: '\00B7';
-      margin: 0 5px;
+        content: '\00B7';
+        margin: 0 5px;
     }
 
     .dot {
-      position: relative;
-      display: block;
-      border: 2px solid #cfcfcf;
-      border-radius: 50%;
-      height: 8px;
-      width: 8px;
-      top: 10px;
-      background-color: #cfcfcf;
+        position: relative;
+        display: block;
+        border: 2px solid #cfcfcf;
+        border-radius: 50%;
+        height: 8px;
+        width: 8px;
+        top: 10px;
+        background-color: #cfcfcf;
     }
 
     .liner {
-      position: relative;
-      height: calc(100% - 40px);
-      min-height: calc(60px - 30px);
-      top: 30px;
-      left: -5px;
-      width: 2px;
-      background-color: #e9e9e9;
+        position: relative;
+        height: calc(100% - 40px);
+        min-height: calc(60px - 30px);
+        top: 30px;
+        left: -5px;
+        width: 2px;
+        background-color: #e9e9e9;
     }
-  }
+}
 
-  .elipsis {
+.elipsis {
     max-height: 100%;
     transition: all 0.2s ease-in;
+
     &.not {
-      max-height: 100%;
-      transition: all 0.2s ease-in;
+        max-height: 100%;
+        transition: all 0.2s ease-in;
     }
 
     p {
-      max-width: 80%;
+        max-width: 80%;
     }
 
     a {
-      font-size: 14px;
-      line-height: 1.42857;
-      font-weight: 400;
-      color: rgba(0,0,0,.6) !important;
-      cursor: pointer;
+        font-size: 14px;
+        line-height: 1.42857;
+        font-weight: 400;
+        color: rgba(0, 0, 0, .6) !important;
+        cursor: pointer;
     }
-  }
+}
 
-  ol {
+ol {
     padding-left: 15px;
-  }
+}
 
-  .flex-to-center {
+.flex-to-center {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     height: 100%;
-  }
+}
 
-  .role {
+.role {
     margin-top: 10px;
-  }
+}
 </style>
