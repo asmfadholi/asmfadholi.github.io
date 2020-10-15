@@ -77,14 +77,14 @@ export default {
             'Using Jquery, HTML5, javascript and CSS3',
           ],
         },
-        {
-          title: 'Implement UI/UX Home Page',
-          url: 'https://asmfadholi.github.io/urbanhireproject/',
-          image: 'https://ecc.co.id/public/portofolio/439016/1527323758Screenshot_from_2018-05-26_15-34-29.png',
-          description: [
-            'Using Jquery, HTML5, Bootstrap and CSS3',
-          ],
-        },
+        // {
+        //   title: 'Implement UI/UX Home Page',
+        //   url: 'https://asmfadholi.github.io/urbanhireproject/',
+        //   image: 'https://ecc.co.id/public/portofolio/439016/1527323758Screenshot_from_2018-05-26_15-34-29.png',
+        //   description: [
+        //     'Using Jquery, HTML5, Bootstrap and CSS3',
+        //   ],
+        // },
         {
           title: 'Urbanhire Project',
           url: 'https://www.urbanhire.co/employers/',
@@ -93,22 +93,22 @@ export default {
             'Using jade (HTML preprocessor), Less (CSS preprocessor), javascript and Jquery',
           ],
         },
-        {
-          title: 'Responsive Home Page',
-          url: 'https://blanja-assignment.herokuapp.com/',
-          image: 'https://ecc.co.id/public/portofolio/439016/1527324435Screenshot_from_2018-05-26_15-46-51.png',
-          description: [
-            'Using jade (HTML preprocessor), Less (CSS preprocessor), Vuejs (Javascript Framework), webpack, babel, and Dummy Restful Api.',
-          ],
-        },
-        {
-          title: 'Infinite Scroll App',
-          url: 'https://infinite-scroll-app.herokuapp.com/',
-          image: 'https://ecc.co.id/public/portofolio/439016/1566407272Screenshot_from_2019-08-22_00-05-56.png',
-          description: [
-            'Using react-js, scss, jsx and react-js cli',
-          ],
-        },
+        // {
+        //   title: 'Responsive Home Page',
+        //   url: 'https://blanja-assignment.herokuapp.com/',
+        //   image: 'https://ecc.co.id/public/portofolio/439016/1527324435Screenshot_from_2018-05-26_15-46-51.png',
+        //   description: [
+        //     'Using jade (HTML preprocessor), Less (CSS preprocessor), Vuejs (Javascript Framework), webpack, babel, and Dummy Restful Api.',
+        //   ],
+        // },
+        // {
+        //   title: 'Infinite Scroll App',
+        //   url: 'https://infinite-scroll-app.herokuapp.com/',
+        //   image: 'https://ecc.co.id/public/portofolio/439016/1566407272Screenshot_from_2019-08-22_00-05-56.png',
+        //   description: [
+        //     'Using react-js, scss, jsx and react-js cli',
+        //   ],
+        // },
         {
           title: 'Jojonomic Project',
           url: 'https://core.jojonomic.com/',
