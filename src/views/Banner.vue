@@ -19,7 +19,7 @@
             md="7">
             <div>
               <h3>Mochammad Fadholi</h3>
-              <h4 class="t--17">Full stack javascript</h4>
+              <h4 class="t--17">Full stack Developer</h4>
               <ul>
                 <li class="d-inline">South Jakarta</li>
                 <li class="d-inline dot">Indonesia</li>
@@ -39,12 +39,12 @@
               <b-row class="work">
                 <b-col cols="2">
                   <img
-                    :src="require('@/assets/images/biznis-logo.png')"
+                    :src="require('@/assets/images/tokopedia.jpeg')"
                     class="EntityPhoto-square-1 flex-shrink-zero"
                     alt="">
                 </b-col>
                 <b-col>
-                  <span> Biznis.id </span>
+                  <span> Tokopedia </span>
                 </b-col>
               </b-row>
 
